@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Kurale&family=Nokora:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --mainBackgroundIMG: linear-gradient(
+        to bottom,
+        rgb(10, 10, 10) 18%,
+        rgb(15, 28, 32) 30%,
+        rgb(16, 36, 36) 65%,
+        rgb(15, 28, 32) 90%
+    );
+
+    --minimunBlue: #d6eaff;
+    --minimunGreen: #f0ffff;
+
+    --mainGreenAqua: #00af90;
+    --mainLittleDarkYellow: #dc9832;
+    --mainColorHover: #9c86ff;
+    --mainBGHover: #5008c3;
+    --customBGButton: #4a2670;
+    --titlePurple: #ccc0ff;
+
+    --brownBordersLine: #9b8d7f4d;
+    --tripleBoxBackground: #121f22;
+    --tripleBoxBorderColor: #9c7653;
+    --trpBox-text-Color: #9b8d7f36;
+    --customBorderColor: rgba(155, 141, 127, 0.15);
+    --customBorderColorHover: rgba(155, 141, 127, 0.7);
+    --nonBlack: #101015;
+
+    --titleSize: 42px;
+    --Nokora: "Nokora", sans-serif;
+    --Kurale: "Kurale", serif;
+
+    --arrow: 750px;
+    --Scrollbar: "./assets/scrollbar";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    appearance: none;
+    font-family: var(--Kurale);
+    color: var(--minimunGreen);
+    outline: none;
+}
+
+html body {
+    background-image: var(--mainBackgroundIMG);
+    overflow-x: hidden;
+    max-height: max-content;
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+    appearance: none;
+    width: 10px;
+    height: 100%;
+    background-image: var(--mainBackgroundIMG);
+}
+
+body::-webkit-scrollbar-thumb {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: -8px;
+    background-image: url("../assets/scrollbar.png");
+}

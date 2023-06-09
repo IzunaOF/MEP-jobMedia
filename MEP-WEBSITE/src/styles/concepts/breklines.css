@@ -1,0 +1,62 @@
+/** FOOTER DIVISOR LINES **/
+
+.brekLine {
+    top: 0;
+    left: 50%;
+    position: absolute;
+    content: "";
+    width: 85px;
+    height: 1px;
+    background-color: var(--customBorderColor);
+    transform: rotate(-77deg);
+}
+.brekLine.n2 {
+    top: 50%;
+    transform: rotate(77deg);
+}
+.brekLine.n3 {
+    top: 100%;
+    transform: rotate(-77deg);
+}
+.brekLine.n4 {
+    width: 75px;
+    top: -40%;
+    transform: rotate(90deg) translate(-10px, -14px);
+}
+
+.hv-color:hover {
+    color: var(--mainColorHover);
+}
+
+/** BUTTON BACK TO TOP CONCEPT **/ 
+
+.back-to-top {
+    position: sticky;
+    top: 80%;
+    left: 95%;
+    padding: 1rem 0;
+    height: min-content;
+    border: 12px;
+}
+.back-to-top:hover > span {
+    cursor: pointer;
+    animation: rainbow 2s linear infinite;
+}
+
+@keyframes rainbow {
+    0%{
+        color: var(--mainGreenAqua);
+    }
+    25%{
+        color: var(--mainColorHover);
+    }
+    50%{
+        color: var(--mainLittleDarkYellow);
+    }
+    75%{
+        color: var(--custtomBGButton);
+    }
+    100%{
+        color: var(--tripleBoxBorderColor);
+    }
+}

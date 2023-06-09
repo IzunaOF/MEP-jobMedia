@@ -1,0 +1,8 @@
+.customButton {
+    width: max-content;
+    padding: 0.2rem 3rem;
+    border-radius: 5px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 20px;
+}

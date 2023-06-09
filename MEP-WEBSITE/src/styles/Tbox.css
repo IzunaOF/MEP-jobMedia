@@ -1,0 +1,24 @@
+.T-box {
+    position: relative;
+}
+.T-box::after,
+.T-box::before {
+    z-index: -1;
+    z-index: 5;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 175px;
+    box-shadow: 5px 5px 5px -5px var(--mainGreenAqua), inset -5px -5px 5px -2px var(--mainGreenAqua);
+    transform: translate(10px, -5px);
+    opacity: 0.2;
+}
+
+.T-box::before {
+    z-index: -1;
+    box-shadow: -5px -5px 5px -5px var(--mainLittleDarkYellow), inset 5px 5px 5px -2px var(--mainLittleDarkYellow);
+    transform: translate(-10px, 5px);
+}

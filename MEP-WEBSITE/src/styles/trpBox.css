@@ -1,0 +1,36 @@
+.trpBox-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    width: 320px;
+    height: max-content;
+    padding: 1rem 1rem 5rem;
+    background-color: var(--tripleBoxBackground);
+    border-top: 2px solid var(--brownBordersLine);
+    border-bottom: 2px solid var(--brownBordersLine);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.trpBox-box:hover {
+    border-color: var(--mainColorHover);
+    animation: trpBoxCollapse 500ms ease, 3s darkin 3s linear infinite;
+}
+@keyframes darkin {
+    0% {
+        border-color: var(--mainColorHover);
+    }
+    15% {
+        border-color: var(--customBorderColor);
+    }
+    50% {
+        border-color: var(--customBorderColorHover);
+    }
+    85% {
+        border-color: var(--customBorderColor);
+    }
+    100% {
+        border-color: var(--mainColorHover);
+    }
+}

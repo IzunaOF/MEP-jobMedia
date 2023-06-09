@@ -1,0 +1,71 @@
+.customBorder {
+    border: none;
+    border-top: 1px solid var(--customBorderColor);
+    border-bottom: 1px solid var(--customBorderColor);
+}
+
+/**                 WIND LINES
+
+*** --- THIS WAS APLPLIED AT DOWNLOAD TITLE --- **
+
+**/
+
+.line-shadow,
+.line-shadow::after,
+.line-shadow::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    filter: opacity(0.4);
+    background-color: var(--mainLittleDarkYellow);
+    box-shadow: 0 0 3px 0 var(--mainLittleDarkYellow);
+    transform: translate(15%, 8px);
+}
+.line-shadow {
+    width: 150px;
+    background-color: var(--mainGreenAqua);
+    box-shadow: 0 0 3px 0 var(--mainGreenAqua);
+    filter: opacity(0.4);
+    transform: translate(-170%, -430px);
+}
+.line-shadow::before {
+    transform: translate(-10%, 15px);
+}
+.v2 {
+
+    filter: opacity(0.28);
+    transform: translate(55%, -465px);
+}
+.v2::before {
+    background-color: var(--mainGreenAqua);
+}
+
+.v3 {
+    filter: opacity(0.15);
+    transform: translate(-10%, -400px);
+}
+.v3::before {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/** BLACK BORDER SHADOW */
+
+.customShadow {
+    position: relative;
+}
+.customShadow::after {
+    z-index: 5;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    box-shadow: 5px 5px 5px -3px var(--nonBlack), inset -5px -5px 5px 0 var(--nonBlack);
+    transform: translate(14px, 18px);
+    border-radius: 22px;
+}

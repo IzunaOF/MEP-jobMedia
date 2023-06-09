@@ -1,0 +1,24 @@
+
+.trpBox-box:hover {
+    border-color: var(--mainColorHover);
+    animation: trpBoxCollapse 500ms ease, 3s darkin 3s linear infinite;
+}
+@keyframes darkin {
+    0% {
+        border-color: var(--customBorderColor);
+    }
+    50% {
+        border-color: var(--customBorderColorHover);
+    }
+    100% {
+        border-color: var(--customBorderColor);
+    }
+}
+
+@keyframes trpBoxCollapse {
+    50% {
+        transform: scale(calc(100 / 95));
+    }
+}
+
+

@@ -1,0 +1,30 @@
+/** BLUR TEAMPLATE  **/
+.BGCIMG {
+    z-index: -2;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    max-width: 1980px;
+    transform: translateX(-50%);
+}
+.blurTemplate {
+    z-index: -3;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.95) 10%,
+        rgba(0, 0, 0, 0.97) 60%,
+        rgb(15, 28, 32) 80%,
+        rgba(0, 0, 0, 0) 100%
+    );
+
+    width: 100vw;
+    height: 200%;
+
+    transform: translateY(-15%);
+}
